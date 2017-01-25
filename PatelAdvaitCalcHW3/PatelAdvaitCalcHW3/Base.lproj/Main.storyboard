@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PatelAdvaitCalcHW3" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,203 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qlc-ee-hes">
+                                <rect key="frame" x="30" y="174" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="7c7-Ym-qeR"/>
+                                    <constraint firstAttribute="height" constant="65" id="EoH-F1-qPZ"/>
+                                    <constraint firstAttribute="width" constant="65" id="HE4-8d-OhC"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="I9s-Sv-HmU"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="one"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mT4-Kp-WoI">
+                                <rect key="frame" x="111" y="174" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="f5Z-1Z-LCX"/>
+                                    <constraint firstAttribute="height" constant="65" id="gfb-Be-gqZ"/>
+                                    <constraint firstAttribute="width" constant="65" id="jfW-bl-8Pi"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="zzv-Km-lU4"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="two"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36A-dx-L3Y">
+                                <rect key="frame" x="30" y="276" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="IFc-VX-0Ia"/>
+                                    <constraint firstAttribute="width" constant="65" id="Nvr-dW-Ty4"/>
+                                    <constraint firstAttribute="height" constant="65" id="PT0-VW-lTo"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="gT9-83-bbx"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="four"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gw-yV-yZq">
+                                <rect key="frame" x="193" y="174" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="ERH-IM-Gn4"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="GwW-xT-8r3"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="efu-Xi-XKR"/>
+                                    <constraint firstAttribute="height" constant="65" id="fH4-Ad-adt"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="three"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbr-Ge-sGq">
+                                <rect key="frame" x="111" y="276" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="8XG-CC-H8S"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="wom-on-TqO"/>
+                                    <constraint firstAttribute="width" constant="65" id="yNc-LI-RoD"/>
+                                    <constraint firstAttribute="height" constant="65" id="z39-UC-HqQ"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="five"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JlJ-Uo-oww">
+                                <rect key="frame" x="193" y="276" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="3Bu-ec-0pR"/>
+                                    <constraint firstAttribute="height" constant="65" id="4xN-uw-L06"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="8R7-UC-yJH"/>
+                                    <constraint firstAttribute="width" constant="65" id="IHx-co-usU"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="six"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4ka-oM-VNM">
+                                <rect key="frame" x="111" y="370" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="3yg-4N-cKt"/>
+                                    <constraint firstAttribute="width" constant="65" id="BQH-4k-xl4"/>
+                                    <constraint firstAttribute="height" constant="65" id="bHL-sM-rPu"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="dTk-sd-71a"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="eight"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HsB-KZ-k1g">
+                                <rect key="frame" x="30" y="370" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="bF9-fY-d6D"/>
+                                    <constraint firstAttribute="height" constant="65" id="byU-QW-NSe"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="nB7-Cr-MIl"/>
+                                    <constraint firstAttribute="width" constant="65" id="v6K-l2-oKy"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="seven"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2d-0b-GF3">
+                                <rect key="frame" x="276" y="174" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="SJJ-k1-rsU"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="Ubj-uj-IBU"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="iZ1-aR-fhO"/>
+                                    <constraint firstAttribute="width" constant="65" id="kda-EK-Lbc"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="plus"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J8j-lx-6sn">
+                                <rect key="frame" x="193" y="370" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="0D6-ue-TaG"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="Shi-Mf-Qng"/>
+                                    <constraint firstAttribute="height" constant="65" id="fXj-TC-rdk"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="mG1-4X-CcM"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="nine"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cd4-k8-dak">
+                                <rect key="frame" x="276" y="370" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="Ayt-53-iey"/>
+                                    <constraint firstAttribute="height" constant="65" id="aqT-c2-NrC"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="kHL-nU-kwq"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="kLU-Jb-SGo"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="multiply"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyQ-23-540">
+                                <rect key="frame" x="276" y="276" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="AMs-wx-eOh"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="DVG-V7-nBM"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="g3d-rf-rYv"/>
+                                    <constraint firstAttribute="width" constant="65" id="rW1-eA-qmE"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="minus"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6yj-bS-q4s">
+                                <rect key="frame" x="111" y="462" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="1M2-YA-caG"/>
+                                    <constraint firstAttribute="width" constant="65" id="2he-PC-LF3"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="XN2-Kj-kgp"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="zj9-ck-UPy"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="zero"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0U-A1-hx0">
+                                <rect key="frame" x="193" y="462" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="8Dd-zj-lRF"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="npm-39-Wed"/>
+                                    <constraint firstAttribute="height" constant="65" id="qHu-K9-6e6"/>
+                                    <constraint firstAttribute="width" constant="65" id="rNJ-Z3-7y5"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="equal"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rfg-IV-ePu">
+                                <rect key="frame" x="276" y="462" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="23g-Fr-g2S"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="GF0-vV-UKk"/>
+                                    <constraint firstAttribute="height" constant="65" id="kT9-V5-hcq"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="ksO-63-cad"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="division"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="st2-Vi-qf4">
+                                <rect key="frame" x="30" y="462" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="Dag-im-caz"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="Y1G-C2-pME"/>
+                                    <constraint firstAttribute="width" constant="65" id="fBJ-ib-eNT"/>
+                                    <constraint firstAttribute="height" constant="65" id="npg-nR-PAL"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="empty-set"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DDh-af-mPd">
+                                <rect key="frame" x="30" y="110" width="311" height="45"/>
+                                <color key="backgroundColor" red="0.12156862745098039" green="0.69411764705882351" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="1pE-xa-AcO"/>
+                                    <constraint firstAttribute="height" constant="65" id="yIF-6C-y9f"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="27"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="116" y="122.78860569715144"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="division" width="512" height="512"/>
+        <image name="eight" width="100" height="100"/>
+        <image name="empty-set" width="512" height="512"/>
+        <image name="equal" width="512" height="512"/>
+        <image name="five" width="100" height="100"/>
+        <image name="four" width="100" height="100"/>
+        <image name="minus" width="512" height="512"/>
+        <image name="multiply" width="512" height="512"/>
+        <image name="nine" width="100" height="100"/>
+        <image name="one" width="100" height="100"/>
+        <image name="plus" width="512" height="512"/>
+        <image name="seven" width="100" height="100"/>
+        <image name="six" width="100" height="100"/>
+        <image name="three" width="100" height="100"/>
+        <image name="two" width="100" height="100"/>
+        <image name="zero" width="100" height="100"/>
+    </resources>
 </document>
