@@ -258,7 +258,6 @@
 		46AC36231E39673100042335 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZSE386E6E9;
 				INFOPLIST_FILE = PatelAdvaitCalcHW3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -271,7 +270,6 @@
 		46AC36241E39673100042335 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = ZSE386E6E9;
 				INFOPLIST_FILE = PatelAdvaitCalcHW3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
