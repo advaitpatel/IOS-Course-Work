@@ -537,6 +537,9 @@
                                     <segment title="4"/>
                                 </segments>
                                 <color key="tintColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="btn_segment:" destination="Puz-hC-U1q" eventType="valueChanged" id="vMn-pR-4QJ"/>
+                                </connections>
                             </segmentedControl>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="This is a label" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dgQ-Bs-zj3">
                                 <rect key="frame" x="89" y="174" width="215" height="30"/>
@@ -550,21 +553,15 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FLY-ea-cc1">
-                                <rect key="frame" x="157" y="239" width="147" height="29"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <segments>
-                                    <segment title="-"/>
-                                    <segment title="+"/>
-                                </segments>
-                                <color key="tintColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
-                            </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2I-gi-0bQ">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2I-gi-0bQ">
                                 <rect key="frame" x="159" y="311" width="112" height="46"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
                                 <state key="normal" title="CANCEL">
                                     <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btn_cancel:" destination="Puz-hC-U1q" eventType="touchUpInside" id="Vcg-bZ-cvV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vrc-us-F63">
                                 <rect key="frame" x="61" y="311" width="71" height="45"/>
@@ -572,27 +569,37 @@
                                 <state key="normal" title="SAVE">
                                     <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="btn_save:" destination="Puz-hC-U1q" eventType="touchUpInside" id="Vw1-jd-wjD"/>
+                                </connections>
                             </button>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="sSr-5P-k5d">
+                                <rect key="frame" x="177" y="239" width="94" height="29"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="btn_stepper:" destination="Puz-hC-U1q" eventType="valueChanged" id="QXw-dc-bGR"/>
+                                </connections>
+                            </stepper>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="8s9-t9-zxc" firstAttribute="leading" secondItem="zjH-Je-nDy" secondAttribute="trailing" constant="-94.5" id="1nd-Ia-apy"/>
                             <constraint firstItem="iA9-Dx-n90" firstAttribute="top" secondItem="azI-fb-7aA" secondAttribute="bottom" constant="35" id="3oq-V5-bAn"/>
-                            <constraint firstItem="FLY-ea-cc1" firstAttribute="leading" secondItem="aUg-bU-UZc" secondAttribute="trailing" constant="8" id="5l8-tP-Puh"/>
                             <constraint firstItem="azI-fb-7aA" firstAttribute="centerX" secondItem="kRh-ow-U6j" secondAttribute="centerX" id="6Tq-Ip-laa"/>
                             <constraint firstItem="8s9-t9-zxc" firstAttribute="centerY" secondItem="kRh-ow-U6j" secondAttribute="centerY" id="BS3-Jf-CMT"/>
                             <constraint firstItem="8s9-t9-zxc" firstAttribute="top" secondItem="azI-fb-7aA" secondAttribute="bottom" constant="-129.5" id="HIf-8h-jLU"/>
+                            <constraint firstItem="8s9-t9-zxc" firstAttribute="top" secondItem="sSr-5P-k5d" secondAttribute="bottom" constant="-317.5" id="KPe-YJ-cYq"/>
                             <constraint firstItem="dgQ-Bs-zj3" firstAttribute="leading" secondItem="SzH-hF-veW" secondAttribute="trailing" constant="19.5" id="Ndn-Re-5SD"/>
                             <constraint firstItem="l2I-gi-0bQ" firstAttribute="leading" secondItem="vrc-us-F63" secondAttribute="trailing" constant="27" id="Tl1-U2-vSq"/>
                             <constraint firstItem="8s9-t9-zxc" firstAttribute="centerX" secondItem="kRh-ow-U6j" secondAttribute="centerX" id="Yj7-xW-c7W"/>
                             <constraint firstItem="Rmd-et-RwR" firstAttribute="top" secondItem="azI-fb-7aA" secondAttribute="bottom" constant="32" id="Z41-UU-1LB"/>
                             <constraint firstItem="SzH-hF-veW" firstAttribute="top" secondItem="iA9-Dx-n90" secondAttribute="bottom" constant="43" id="Zl0-BJ-gLx"/>
                             <constraint firstItem="vrc-us-F63" firstAttribute="top" secondItem="zjH-Je-nDy" secondAttribute="bottom" constant="47" id="a7i-IE-6EO"/>
-                            <constraint firstItem="l2I-gi-0bQ" firstAttribute="top" secondItem="FLY-ea-cc1" secondAttribute="bottom" constant="44" id="alj-02-36J"/>
+                            <constraint firstItem="sSr-5P-k5d" firstAttribute="leading" secondItem="aUg-bU-UZc" secondAttribute="trailing" constant="28" id="bFU-nc-02R"/>
                             <constraint firstItem="zjH-Je-nDy" firstAttribute="top" secondItem="SzH-hF-veW" secondAttribute="bottom" constant="43" id="cwX-cR-7Qg"/>
                             <constraint firstItem="8s9-t9-zxc" firstAttribute="leading" secondItem="iA9-Dx-n90" secondAttribute="trailing" constant="-108.5" id="ehr-RM-Ent"/>
                             <constraint firstItem="Rmd-et-RwR" firstAttribute="leading" secondItem="iA9-Dx-n90" secondAttribute="trailing" constant="8" id="fR7-B8-u90"/>
-                            <constraint firstItem="FLY-ea-cc1" firstAttribute="top" secondItem="dgQ-Bs-zj3" secondAttribute="bottom" constant="35" id="hyD-9h-2Ia"/>
                             <constraint firstItem="8s9-t9-zxc" firstAttribute="leading" secondItem="vrc-us-F63" secondAttribute="trailing" constant="-159.5" id="jeT-8h-5Uy"/>
                             <constraint firstItem="aUg-bU-UZc" firstAttribute="top" secondItem="dgQ-Bs-zj3" secondAttribute="bottom" constant="39" id="nRx-cj-5Sf"/>
                             <constraint firstItem="8s9-t9-zxc" firstAttribute="leading" secondItem="SzH-hF-veW" secondAttribute="trailing" constant="-94.5" id="p00-uf-HLe"/>
@@ -601,6 +608,12 @@
                             <constraint firstItem="Rmd-et-RwR" firstAttribute="leading" secondItem="8s9-t9-zxc" secondAttribute="trailing" constant="-258.5" id="yde-df-BLW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lbl_channel" destination="aUg-bU-UZc" id="CZP-W9-mCu"/>
+                        <outlet property="seg_btn" destination="Rmd-et-RwR" id="9UT-Vj-AXg"/>
+                        <outlet property="step_channel" destination="sSr-5P-k5d" id="6LC-R9-xFk"/>
+                        <outlet property="tf_label" destination="dgQ-Bs-zj3" id="z6i-Wf-ABs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="li8-aO-x7S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
