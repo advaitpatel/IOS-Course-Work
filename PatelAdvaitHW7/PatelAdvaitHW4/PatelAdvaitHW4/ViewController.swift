@@ -10,6 +10,13 @@ import UIKit
 
 class ViewController: UIViewController
 {
+    
+    
+    var fc1 = FavoriteChannelConfigurator(fcID: 0, fcNumber: 1, fcName: "ABC")
+    var fc2 = FavoriteChannelConfigurator(fcID: 1, fcNumber: 25, fcName: "NBC")
+    var fc3 = FavoriteChannelConfigurator(fcID: 2, fcNumber: 75, fcName: "CBS")
+    var fc4 = FavoriteChannelConfigurator(fcID: 3, fcNumber: 100, fcName: "FOX")
+    
     var powerStatus = "ON"
     var volumeStatus = ""
     var channelStatus = ""
@@ -194,6 +201,7 @@ class ViewController: UIViewController
     
     @IBAction func btnSegmentChannel(_ sender: UISegmentedControl)
     {
+        /*
         let favCurrentChannel = sender.selectedSegmentIndex
         switch favCurrentChannel {
         case 0:
@@ -206,6 +214,24 @@ class ViewController: UIViewController
             currentChannel = 100
         default:
             currentChannel = 1
+        }
+        lblChannel.text = String(currentChannel)
+ 
+ */
+        
+        
+        let favChannel = sender.selectedSegmentIndex
+        switch favChannel {
+        case 0:
+            currentChannel = fc1.getNumber()
+        case 1:
+            currentChannel = fc2.getNumber()
+        case 2:
+            currentChannel = fc3.getNumber()
+        case 3:
+            currentChannel = fc4.getNumber()
+        default:
+            currentChannel = fc1.getNumber()
         }
         lblChannel.text = String(currentChannel)
     }

@@ -65,7 +65,6 @@ class ConfigurationViewController: UIViewController {
             case 0:
                 fc = fc1
             case 1:
-                
                 fc = fc2
             case 2:
                 fc = fc3

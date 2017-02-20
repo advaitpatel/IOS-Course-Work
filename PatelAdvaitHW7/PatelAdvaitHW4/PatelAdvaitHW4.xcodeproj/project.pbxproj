@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		461E10181E5BAEA20056378E /* FavoriteChannelConfiguratorCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461E10171E5BAEA20056378E /* FavoriteChannelConfiguratorCollectionViewController.swift */; };
 		4676B7181E54F7920063E780 /* DVRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4676B7171E54F7920063E780 /* DVRViewController.swift */; };
 		4676B71A1E550D780063E780 /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4676B7191E550D780063E780 /* ConfigurationViewController.swift */; };
 		46DCE35B1E490ADF005EF3F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DCE35A1E490ADF005EF3F5 /* AppDelegate.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		461E10171E5BAEA20056378E /* FavoriteChannelConfiguratorCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteChannelConfiguratorCollectionViewController.swift; sourceTree = "<group>"; };
 		4676B7171E54F7920063E780 /* DVRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DVRViewController.swift; sourceTree = "<group>"; };
 		4676B7191E550D780063E780 /* ConfigurationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
 		46DCE3571E490ADF005EF3F5 /* PatelAdvaitHW4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PatelAdvaitHW4.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +63,7 @@
 				46DCE35A1E490ADF005EF3F5 /* AppDelegate.swift */,
 				46DCE35C1E490ADF005EF3F5 /* ViewController.swift */,
 				4676B7191E550D780063E780 /* ConfigurationViewController.swift */,
+				461E10171E5BAEA20056378E /* FavoriteChannelConfiguratorCollectionViewController.swift */,
 				46DCE35E1E490ADF005EF3F5 /* Main.storyboard */,
 				4676B7171E54F7920063E780 /* DVRViewController.swift */,
 				46DCE3611E490ADF005EF3F5 /* Assets.xcassets */,
@@ -147,6 +150,7 @@
 				4676B71A1E550D780063E780 /* ConfigurationViewController.swift in Sources */,
 				4676B7181E54F7920063E780 /* DVRViewController.swift in Sources */,
 				46DCE35B1E490ADF005EF3F5 /* AppDelegate.swift in Sources */,
+				461E10181E5BAEA20056378E /* FavoriteChannelConfiguratorCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
