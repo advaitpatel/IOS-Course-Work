@@ -474,7 +474,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_11" translatesAutoresizingMaskIntoConstraints="NO" id="8s9-t9-zxc">
-                                <rect key="frame" x="-27.5" y="-49.5" width="375" height="667"/>
+                                <rect key="frame" x="-28" y="-49.5" width="376" height="667"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="667" id="H8A-Pa-gs8"/>
                                     <constraint firstAttribute="width" constant="375" id="KDE-TW-mg0"/>
@@ -504,13 +504,13 @@
                                 </items>
                             </toolbar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Configure Favorite Channels" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azI-fb-7aA">
-                                <rect key="frame" x="19" y="56" width="283.5" height="24"/>
+                                <rect key="frame" x="18" y="56.5" width="284" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
                                 <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Button" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iA9-Dx-n90">
-                                <rect key="frame" x="25.5" y="115" width="55.5" height="21"/>
+                                <rect key="frame" x="25" y="115.5" width="56" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -553,16 +553,6 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2I-gi-0bQ">
-                                <rect key="frame" x="159" y="311" width="112" height="46"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
-                                <state key="normal" title="CANCEL">
-                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="btn_cancel:" destination="Puz-hC-U1q" eventType="touchUpInside" id="Vcg-bZ-cvV"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vrc-us-F63">
                                 <rect key="frame" x="61" y="311" width="71" height="45"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
@@ -581,6 +571,16 @@
                                     <action selector="btn_stepper:" destination="Puz-hC-U1q" eventType="valueChanged" id="QXw-dc-bGR"/>
                                 </connections>
                             </stepper>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2I-gi-0bQ">
+                                <rect key="frame" x="61" y="372" width="112" height="46"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                                <state key="normal" title="CANCEL">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="btn_cancel:" destination="Puz-hC-U1q" eventType="touchUpInside" id="Vcg-bZ-cvV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -589,6 +589,7 @@
                             <constraint firstItem="azI-fb-7aA" firstAttribute="centerX" secondItem="kRh-ow-U6j" secondAttribute="centerX" id="6Tq-Ip-laa"/>
                             <constraint firstItem="8s9-t9-zxc" firstAttribute="centerY" secondItem="kRh-ow-U6j" secondAttribute="centerY" id="BS3-Jf-CMT"/>
                             <constraint firstItem="8s9-t9-zxc" firstAttribute="top" secondItem="azI-fb-7aA" secondAttribute="bottom" constant="-129.5" id="HIf-8h-jLU"/>
+                            <constraint firstItem="l2I-gi-0bQ" firstAttribute="top" secondItem="vrc-us-F63" secondAttribute="bottom" constant="16" id="IOZ-Wd-YQS"/>
                             <constraint firstItem="8s9-t9-zxc" firstAttribute="top" secondItem="sSr-5P-k5d" secondAttribute="bottom" constant="-317.5" id="KPe-YJ-cYq"/>
                             <constraint firstItem="dgQ-Bs-zj3" firstAttribute="leading" secondItem="SzH-hF-veW" secondAttribute="trailing" constant="19.5" id="Ndn-Re-5SD"/>
                             <constraint firstItem="l2I-gi-0bQ" firstAttribute="leading" secondItem="vrc-us-F63" secondAttribute="trailing" constant="27" id="Tl1-U2-vSq"/>

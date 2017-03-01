@@ -41,13 +41,19 @@ class ConfigurationViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         
-        fc = fc1
+        
+    }
+    
+    func refresh(index: Int)
+    {
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     @IBAction func btn_stepper(_ sender: UIStepper)
     {
@@ -59,21 +65,8 @@ class ConfigurationViewController: UIViewController {
     
     @IBAction func btn_segment(_ sender: UISegmentedControl)
     {
-        let favChannel = sender.selectedSegmentIndex
-        switch favChannel
-        {
-            case 0:
-                fc = fc1
-            case 1:
-                fc = fc2
-            case 2:
-                fc = fc3
-            case 3:
-                fc = fc4
-            default:
-                fc = fc1
-        
-        }
+        tf_label.resignFirstResponder()
+        refresh(index: sender.selectedSegmentIndex)
     }
     
     @IBAction func btn_save(_ sender: UIButton)
@@ -90,7 +83,9 @@ class ConfigurationViewController: UIViewController {
         {
             fc.saveFavChannel(fcObj: fc, fcID: fc.getID(), fcNumber: fcNumber!, fcName: fcName!)
         }
+        
     }
+    
     
     
     @IBAction func btn_cancel(_ sender: UIButton)
